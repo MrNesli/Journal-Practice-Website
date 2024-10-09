@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>The Gazette</title>
+  </head>
+  <body>
+    <header>
+      <div id="top-bar">
+        <div class="container-top">
+          <div class="breaking-news">
+            <h4>BREAKING NEWS</h4>
+            <p>Brexit breakthrough in Bweek of drama</p>
+          </div>
+          <div class="currencies">
+            <!-- <div class="exchange"> -->
+            <div id="eur-usd" class="exchange">
+              <div class="horizontal">
+                <p class="label">EUR/USD</p>
+                <p class="current-rate">1.1862</p>
+              </div>
+  
+              <div class="live-rate positive">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 612 612" xml:space="preserve">
+                  <g>
+                    <path d="M604.501,440.509L325.398,134.956c-5.331-5.357-12.423-7.627-19.386-7.27c-6.989-0.357-14.056,1.913-19.387,7.27
+                      L7.499,440.509c-9.999,10.024-9.999,26.298,0,36.323s26.223,10.024,36.222,0l262.293-287.164L568.28,476.832
+                      c9.999,10.024,26.222,10.024,36.221,0C614.5,466.809,614.5,450.534,604.501,440.509z"/>
+                  </g>
+                </svg>
+                <p>0.18</p>
+              </div>
+  
+            </div>
+  
+            <div id="btc-usd" class="exchange">
+              <div class="horizontal">
+                <p class="label">BTC/USD</p>
+                <p class="current-rate">1.1862</p>
+              </div>
+  
+              <div class="live-rate negative">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 284.929 284.929" xml:space="preserve">
+                  <g>
+                    <path d="M282.082,76.511l-14.274-14.273c-1.902-1.906-4.093-2.856-6.57-2.856c-2.471,0-4.661,0.95-6.563,2.856L142.466,174.441
+                      L30.262,62.241c-1.903-1.906-4.093-2.856-6.567-2.856c-2.475,0-4.665,0.95-6.567,2.856L2.856,76.515C0.95,78.417,0,80.607,0,83.082
+                      c0,2.473,0.953,4.663,2.856,6.565l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854L282.082,89.647
+                      c1.902-1.903,2.847-4.093,2.847-6.565C284.929,80.607,283.984,78.417,282.082,76.511z"/>
+                  </g>
+                </svg>
+
+                <p>0.18</p>
+              </div>
+  
+            </div>
+  
+            <div id="eth-usd" class="exchange">
+              <div class="horizontal">
+                <p class="label">ETH/USD</p>
+                <p class="current-rate">1.1862</p>
+              </div>
+  
+              <div class="live-rate positive">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 612 612" xml:space="preserve">
+                  <g>
+                    <path d="M604.501,440.509L325.398,134.956c-5.331-5.357-12.423-7.627-19.386-7.27c-6.989-0.357-14.056,1.913-19.387,7.27
+                      L7.499,440.509c-9.999,10.024-9.999,26.298,0,36.323s26.223,10.024,36.222,0l262.293-287.164L568.28,476.832
+                      c9.999,10.024,26.222,10.024,36.221,0C614.5,466.809,614.5,450.534,604.501,440.509z"/>
+                  </g>
+                </svg>
+                <p>0.18</p>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+        
+        <!-- </div> -->
+      </div>
+
+      <div id="logo">
+        <img src="img/core-img/logo.png" alt="logo">
+      </div>
+
+      <div id="menu-bar">
+        <div class="container">
+          <nav class="navigation">
+            <ul>
+              <li><a href="#">Today</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Politics</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Travel</a></li>
+              <li><a href="#">Health</a></li>
+              <li><a href="#">Entertainment</a></li>
+              <li><a href="#">Sport</a></li>
+            </ul>
+          </nav>
+  
+          <div class="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 612.08 612.08" xml:space="preserve">
+              <g>
+                <path d="M237.927,0C106.555,0,0.035,106.52,0.035,237.893c0,131.373,106.52,237.893,237.893,237.893
+                  c50.518,0,97.368-15.757,135.879-42.597l0.028-0.028l176.432,176.433c3.274,3.274,8.48,3.358,11.839,0l47.551-47.551
+                  c3.274-3.274,3.106-8.703-0.028-11.838L433.223,373.8c26.84-38.539,42.597-85.39,42.597-135.907C475.82,106.52,369.3,0,237.927,0z
+                   M237.927,419.811c-100.475,0-181.918-81.443-181.918-181.918S137.453,55.975,237.927,55.975s181.918,81.443,181.918,181.918
+                  S338.402,419.811,237.927,419.811z"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <div id="latest-news">
+      <div class="container">
+        <div class="article n1">
+          <div class="darken">
+            <div class="block">
+              <div class="category">Politics</div>
+              <a class="title" href="#">Financial advices</a>
+              <p class="date">March 29, 2018</p>
+            </div>
+          </div>
+        </div>
+        <div class="article n2">
+          <div class="darken">
+            <div class="block">
+              <div class="category">Live</div>
+              <a class="title" href="#">The latest news live</a>
+              <p class="date">March 29, 2018</p>
+            </div>
+          </div>
+        </div>
+        <div class="article n3">
+          <div class="darken">
+            <div class="block">
+              <div class="category">Crypto</div>
+              <a class="title" href="#">Crypto world goes mad</a>
+              <p class="date">March 29, 2018</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="news-carousel">
+        <!-- Utilise embla ou qqch du genre -->
+        <div class="element background-dark">
+          <div class="time-online category">10:40</div>
+          <p class="description">
+            The Facebook Live stream that could presage TV
+          </p>
+        </div>
+
+        <div class="element background-light">
+          <div class="time-online category">11:02</div>
+          <p class="description">
+            Opinion: It's time to start talking about impeachment
+          </p>
+        </div>
+
+        <div class="element background-dark">
+          <div class="time-online category">12:37</div>
+          <p class="description">
+            Clinton aims to shore up Wisconsin with new TV ads
+          </p>
+        </div>
+
+        <div class="element background-light">
+          <div class="time-online category">13:59</div>
+          <p class="description">
+            Trump signs tax bill before leaving for Mar-a-Lago
+          </p>
+        </div>
+      </div>
+    </div>
+
+      
+
+    <section id="main">
+      <div class="container-top">
+        <div class="horizontal">
+          <div class="body">
+            <div class="main-article">
+              <div class="category">Politics</div>
+              <h2 class="title">
+                <a href="#">
+                  What's behind the world obsession with gems?
+                </a>
+              </h2>
+              <p class="date">March 29, 2016</p>
+  
+              <img class="image" src="img/blog-img/1.jpg" alt="">
+  
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti est quibusdam sint perferendis qui expedita non voluptas doloremque? Aperiam culpa ab in, ex praesentium exercitationem cupiditate facilis nostrum eius a!
+              </p>
+  
+              <div class="footer">
+                <div class="continue-button">
+                  <a href="#">Continue Reading</a>
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="black"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                </div>
+                
+                <div class="socials">
+                  <svg style="background-color: blue; border-radius: 5px;width:25px; padding:3px; fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M374.245,285.825l14.104,-91.961l-88.233,0l0,-59.677c0,-25.159 12.325,-49.682 51.845,-49.682l40.117,0l0,-78.291c0,0 -36.408,-6.214 -71.214,-6.214c-72.67,0 -120.165,44.042 -120.165,123.775l0,70.089l-80.777,0l0,91.961l80.777,0l0,222.31c16.197,2.542 32.798,3.865 49.709,3.865c16.911,0 33.512,-1.323 49.708,-3.865l0,-222.31l74.129,0Z" style="fill: white; fill-rule:nonzero;"/></svg>
+                  <svg style="width: 30px; fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M448,512l-384,0c-35.328,0 -64,-28.672 -64,-64l0,-384c0,-35.328 28.672,-64 64,-64l384,0c35.328,0 64,28.672 64,64l0,384c0,35.328 -28.672,64 -64,64Z" id="Dark_Blue" style="fill:#1da1f2;fill-rule:nonzero;"/><path d="M196.608,386.048c120.704,0 186.752,-100.096 186.752,-186.752c0,-2.816 0,-5.632 -0.128,-8.448c12.8,-9.216 23.936,-20.864 32.768,-34.048c-11.776,5.248 -24.448,8.704 -37.76,10.368c13.568,-8.064 23.936,-20.992 28.928,-36.352c-12.672,7.552 -26.752,12.928 -41.728,15.872c-12.032,-12.8 -29.056,-20.736 -47.872,-20.736c-36.224,0 -65.664,29.44 -65.664,65.664c0,5.12 0.64,10.112 1.664,14.976c-54.528,-2.688 -102.912,-28.928 -135.296,-68.608c-5.632,9.728 -8.832,20.992 -8.832,33.024c0,22.784 11.648,42.88 29.184,54.656c-10.752,-0.384 -20.864,-3.328 -29.696,-8.192l0,0.896c0,31.744 22.656,58.368 52.608,64.384c-5.504,1.536 -11.264,2.304 -17.28,2.304c-4.224,0 -8.32,-0.384 -12.288,-1.152c8.32,26.112 32.64,45.056 61.312,45.568c-22.528,17.664 -50.816,28.16 -81.536,28.16c-5.248,0 -10.496,-0.256 -15.616,-0.896c28.928,18.432 63.488,29.312 100.48,29.312" id="Logo__x2014__FIXED" style="fill:#fff;fill-rule:nonzero;"/></g></svg>
+                  <svg style="width: 30px; fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="g5891"><path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;"/><g id="shapes"><rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667"/><path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0" style="fill:#fff;fill-rule:nonzero;"/><path d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z" id="path15" style="fill:#fff;fill-rule:nonzero;"/></g></g></svg>
+                  <svg style="width: 30px; fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-260.214,0c10.837,-18.276 24.602,-44.144 30.094,-65.264c3.331,-12.822 17.073,-65.143 17.073,-65.143c8.934,17.04 35.04,31.465 62.807,31.465c82.652,0 142.199,-76.005 142.199,-170.448c0,-90.528 -73.876,-158.265 -168.937,-158.265c-118.259,0 -181.063,79.384 -181.063,165.827c0,40.192 21.397,90.228 55.623,106.161c5.192,2.415 7.969,1.351 9.164,-3.666c0.909,-3.809 5.53,-22.421 7.612,-31.077c0.665,-2.767 0.336,-5.147 -1.901,-7.86c-11.323,-13.729 -20.394,-38.983 -20.394,-62.536c0,-60.438 45.767,-118.921 123.739,-118.921c67.317,0 114.465,45.875 114.465,111.485c0,74.131 -37.438,125.487 -86.146,125.487c-26.9,0 -47.034,-22.243 -40.579,-49.52c7.727,-32.575 22.696,-67.726 22.696,-91.239c0,-21.047 -11.295,-38.601 -34.673,-38.601c-27.5,0 -49.585,28.448 -49.585,66.551c0,24.27 8.198,40.685 8.198,40.685c0,0 -27.155,114.826 -32.132,136.211c-5.51,23.659 -3.352,56.982 -0.956,78.664l0.011,0.004l-103.993,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z"/></svg>
+                </div>
+              </div>
+            </div>
+  
+            <div class="most-popular">
+              <h3 class="section-title">Today's Most Popular</h3>
+              
+              <div class="article-block">
+                <img src="img/blog-img/2.jpg" alt="">
+                <div class="description">
+                  <div class="category">News</div>
+                  <h3>
+                    <a class="title" href="#">
+                      $250-million mansion is most expensive
+                    </a>
+                  </h3>
+                  <p class="date">March 29, 2016</p>
+  
+                  <p class="comments-count">3 COMMENTS</p>
+  
+                  <p class="article-extract">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.
+                  </p>
+                </div>
+              </div>
+  
+              <div class="article-block">
+                <img src="img/blog-img/3.jpg" alt="">
+                <div class="description">
+                  <div class="category">Life</div>
+                  <h3>
+                    <a class="title" href="#">
+                      Homeless man steals $350,000
+                    </a>
+                  </h3>
+                  <p class="date">March 29, 2016</p>
+  
+                  <p class="comments-count">3 COMMENTS</p>
+  
+                  <p class="article-extract">
+                    Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-bar">
+            <h3 class="section-title">BREAKING NEWS</h3>
+            
+            <div class="cards">
+              <div class="article-card">
+                <div class="container">
+                  <div class="top">
+                    <div class="category">Breaking news</div>
+                  </div>
+    
+                  <a href="#" class="title">
+                    China leads new global skyscraper record
+                  </a>
+                </div>
+              </div>
+    
+              <div class="article-card">
+                <div class="container">
+                  <div class="top">
+                    <div class="category">Breaking news</div>
+                  </div>
+    
+                  <a href="#" class="title">
+                    Can a zebra crossing change its stripes?
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+            <h3 class="section-title">DON'T MISS</h3>
+
+
+            <div class="dont-miss">
+              <div class="article-ref">
+                <img src="img/blog-img/dm-1.jpg" alt="">
+                <div class="description">
+                  <a href="#" class="title">EU council reunites</a>
+                  <p class="date">Nov 29, 2017</p>
+                </div>
+              </div>
+              <div class="article-ref">
+                <img src="img/blog-img/dm-2.jpg" alt="">
+                <div class="description">
+                  <a href="#" class="title">A new way to travel the world</a>
+                  <p class="date">March 29, 2016</p>
+                </div>
+              </div>
+              <div class="article-ref">
+                <img src="img/blog-img/dm-3.jpg" alt="">
+                <div class="description">
+                  <a href="#" class="title">Why choose a bank?</a>
+                  <p class="date">March 29, 2016</p>
+                </div>
+              </div>
+            </div>
+            
+  
+            <h3 class="section-title">SUBSCRIBE</h3>
+  
+            <input type="text" class="email">
+            <button>SUBSCRIBE</button>
+  
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="grid">
+          <div class="grid-item">
+            <div class="articles-list">
+              <img src="img/blog-img/9.jpg" alt="">
+
+              <div class="category">Video</div>
+              
+              <div class="article">
+                <a href="#" class="title">
+                  Save the eniroment with this step
+                </a>
+                <p class="date">Nov 29, 2017</p>
+              </div>
+              
+              <div class="article">
+                <a href="#" class="title">
+                  Protest to be anounced in January
+                </a>
+                <p class="date">Nov 29, 2017</p>
+              </div>
+              
+              <div class="article">
+                <a href="#" class="title">
+                  10 Bills that the Congress in voting
+                </a>
+                <p class="date">Nov 29, 2017</p>
+              </div>
+              
+              <div class="article">
+                <a href="#" class="title">
+                  The narcissism of Donald Trump
+                </a>
+                <p class="date">Nov 29, 2017</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <div class="mini-article">
+              <img src="img/blog-img/14.jpg" alt="">
+              <div class="category">Others</div>
+
+              <a href="#" class="title">
+                11 hottest toys for this holiday season
+              </a>
+              <p class="date">Nov 29, 2017</p>
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <div class="mini-article">
+              <img src="img/blog-img/15.jpg" alt="">
+              <div class="category">Video</div>
+              
+              <a href="#" class="title">
+                Get this good feeling about life
+              </a>
+              <p class="date">Nov 29, 2017</p>
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <div class="mini-article">
+              <img src="img/blog-img/16.jpg" alt="">
+              <div class="category">Interview</div>
+
+              <a href="#" class="title">
+                Get this good feeling about life
+              </a>
+              <p class="date">Nov 29, 2017</p>
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <div class="mini-article">
+              <img src="img/blog-img/17.jpg" alt="">
+              <div class="category">Video</div>
+
+              <a href="#" class="title">
+                11 hottest toys for this holiday season
+              </a>
+              <p class="date">Nov 29, 2017</p>
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <div class="articles-list">
+              <img src="img/blog-img/12.jpg" alt="">
+              <div class="category">VIDEO</div>
+
+              <div class="article">
+                <a href="#" class="title">
+                  10 Bills that the Congress in voting
+                </a>
+                <p class="date">Nov 29, 2017</p>
+              </div>
+              
+              <div class="article">
+                <a href="#" class="title">
+                  Blair can't save Britain from Brexit
+                </a>
+                <p class="date">Nov 29, 2017</p>
+              </div>
+              
+              <div class="article">
+                <a href="#" class="title">
+                  Save the eniroment with this step
+                </a>
+                <p class="date">Nov 29, 2017</p>
+              </div>
+              
+              <div class="article">
+                <a href="#" class="title">
+                  Protest to be anounced in January
+                </a>
+                <p class="date">Nov 29, 2017</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container other-articles">
+        <div class="articles">
+          <div class="row">
+            <div class="article">
+              <img src="img/blog-img/4.jpg" alt="">
+              <a href="#">
+                Show suspended by PBS amid misconduct allegations
+              </a>
+            </div>
+
+            <div class="article">
+              <img src="img/blog-img/5.jpg" alt="">
+              <a href="#">
+                Parents to Congress
+              </a>
+            </div>
+
+            <div class="article">
+              <img src="img/blog-img/6.jpg" alt="">
+              <a href="#">
+                Third Buy Alert for This “Millionaire Maker” Stock
+              </a>
+            </div>
+
+            <div class="article">
+              <img src="img/blog-img/7.jpg" alt="">
+              <a href="#">
+                The Chicago Mercantile Exchange is set to begin
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="article">
+              <img src="img/blog-img/8.jpg" alt="">
+              <a href="#">
+                Trading bitcoin futures
+              </a>
+            </div>
+
+            <div class="article">
+              <img src="img/blog-img/9.jpg" alt="">
+              <a href="#">
+                Are ‘Micro-Mansions’ the Next Big Thing?
+              </a>
+            </div>
+
+            <div class="article">
+              <img src="img/blog-img/10.jpg" alt="">
+              <a href="#">
+                McKinney’s target market
+              </a>
+            </div>
+
+            <div class="article">
+              <img src="img/blog-img/11.jpg" alt="">
+              <a href="#">
+                Australian Property Prices Remain Flat
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="articles-slider">
+      <!-- Utilise Swiper.js pour le slider -->
+       <swiper-container>
+        <swiper-slide>
+          <div class="article">
+            <img src="" alt="">
+            <div class="description">
+              <div class="category">EDITORIAL</div>
+              
+              <h2 class="title">
+                <a href="#">
+                  Move over, bitcoin. Here comes liteconin
+                </a>
+              </h2>
+              <p class="date">March 29, 2016</p>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis...
+              </p>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="article">
+            <img src="" alt="">
+            <div class="description">
+              <div class="category">EDITORIAL</div>
+              
+              <h2 class="title">
+                <a href="#">
+                  Move over, bitcoin. Here comes liteconin
+                </a>
+              </h2>
+              <p class="date">March 29, 2016</p>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis...
+              </p>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="article">
+            <img src="" alt="">
+            <div class="description">
+              <div class="category">EDITORIAL</div>
+              
+              <h2 class="title">
+                <a href="#">
+                  Move over, bitcoin. Here comes liteconin
+                </a>
+              </h2>
+              <p class="date">March 29, 2016</p>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis...
+              </p>
+            </div>
+          </div>
+        </swiper-slide>
+       </swiper-container>
+    </section>
+
+    <footer>
+      <!-- <div class="container">
+        <div class="lists">
+          <div class="block">
+            <div class="list-contact">
+              <h3 class="title">Regions</h3>
+    
+              <div class="links">
+                <a href="#">U.S.</a>
+                <a href="#">Africa</a>
+                <a href="#">Americas</a>
+                <a href="#">Asia</a>
+                <a href="#">China</a>
+                <a href="#">Middle</a>
+                <a href="#">East</a>
+                <a href="#">Opinion</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="list-contact">
+              <h3 class="title">Fashion</h3>
+    
+              <div class="links">
+                <a href="#">Election 2016</a>
+                <a href="#">Nation</a>
+                <a href="#">World</a>
+                <a href="#">Our Team</a>
+              </div>
+            </div>
+            <div class="list-contact">
+              <h3 class="title">Politics</h3>
+    
+              <div class="links">
+                <a href="#">Business</a>
+                <a href="#">Markets</a>
+                <a href="#">Tech</a>
+                <a href="#">Luxury</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="list-contact">
+              <h3 class="title">Featured</h3>
+    
+              <div class="links">
+                <a href="#">Football</a>
+                <a href="#">Golf</a>
+                <a href="#">Tennis</a>
+                <a href="#">Motorsport</a>
+                <a href="#">Horseracing</a>
+                <a href="#">Sailing</a>
+                <a href="#">Equestrian</a>
+                <a href="#">Skiing</a>
+              </div>
+            </div>
+            <div class="list-contact">
+              <h3 class="title">FAQ</h3>
+              
+              <div class="links">
+                <a href="#">Aviation</a>
+                <a href="#">Business</a>
+                <a href="#">Traveller</a>
+                <a href="#">Destinations</a>
+                <a href="#">Features</a>
+                <a href="#">Food/Drink</a>
+                <a href="#">Hotels</a>
+                <a href="#">Partner Hotels</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="list-contact">
+              <h3 class="title">+More</h3>
+
+              <div class="links">
+                <a href="#">Fashion</a>
+                <a href="#">Design</a>
+                <a href="#">Architecture</a>
+                <a href="#">Arts</a>
+                <a href="#">Autos</a>
+                <a href="#">Luxury</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h5 class="copyright">Copyright @2024 All Rights Reserved</h5>
+      </div> -->
+      <div class="footer-columns">
+        <div class="column">
+          <h4>Regions</h4>
+          <ul>
+            <li><a href="#">U.S.</a></li>
+            <li><a href="#">Africa</a></li>
+            <li><a href="#">Americas</a></li>
+            <li><a href="#">Asia</a></li>
+            <li><a href="#">China</a></li>
+            <li><a href="#">Europe</a></li>
+            <li><a href="#">Middle</a></li>
+            <li><a href="#">East</a></li>
+            <li><a href="#">Opinion</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Fashion</h4>
+          <ul>
+            <li><a href="#">Election 2016</a></li>
+            <li><a href="#">Nation</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Politics</h4>
+          <ul>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Markets</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">Luxury</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Featured</h4>
+          <ul>
+            <li><a href="#">Football</a></li>
+            <li><a href="#">Golf</a></li>
+            <li><a href="#">Tennis</a></li>
+            <li><a href="#">Motorsport</a></li>
+            <li><a href="#">Horseracing</a></li>
+            <li><a href="#">Equestrian</a></li>
+            <li><a href="#">Equestrian</a></li>
+            <li><a href="#">Sailing</a></li>
+            <li><a href="#">Skiing</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>FAQ</h4>
+          <ul>
+            <li><a href="#">Aviation</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Traveller</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Food/Drink</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Partner Hotels</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>+More</h4>
+          <ul>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Arts</a></li>
+            <li><a href="#">Autos</a></li>
+            <li><a href="#">Luxury</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <hr />
+        <p>
+          &copy; 2024 All rights reserved | This template is made with
+          <span class="heart">❤</span> by Colorlib
+        </p>
+      </div>
+      <a href="#top" class="back-to-top">&#9650;</a>
+    </footer>
+    
+    <!-- <script type="module" src="/scripts/main.js"></script> -->
+  </body>
+</html>
