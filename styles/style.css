@@ -212,13 +212,6 @@ header .container-top {
         padding-top: 64px;
         padding-left: 80px;
 
-        /* .category {
-          background-color: var(--category-background-color);
-          text-transform: uppercase;
-          width: fit-content;
-          padding: 0.2em 0.4em;
-          font-weight: bold;
-        } */
         .title {
           color: white;
           text-decoration: none;
@@ -232,6 +225,7 @@ header .container-top {
 
 
 #news-carousel {
+  width: 100%;
   position: absolute;
   display: flex;
   height: 40px;
@@ -247,15 +241,14 @@ header .container-top {
 }
 
 #news-carousel .element {
+  overflow: hidden;
   display: flex;
   padding-right: 16px;
   align-items: end;
 }
 
 #news-carousel .description {
-  /* overflow-inline: clip; */
   white-space: nowrap;
-  overflow: hidden;
   padding-left: 8px;
   color: white;
   font-size: 1rem;
@@ -276,6 +269,7 @@ header .container-top {
 
 #main .body {
   width: 80%;
+  margin-right: var(--space-between-main-blocks);
 }
 
 #main .right-bar {
@@ -292,6 +286,7 @@ header .container-top {
 }
 
 #main .main-article {
+  
 
   .title {
     font-family: serif;
@@ -301,7 +296,7 @@ header .container-top {
 
   .image {
     width: 100%;
-    margin-right: var(--space-between-main-blocks);
+    /* margin-right: var(--space-between-main-blocks) */
   }
 
   .date {
@@ -313,7 +308,7 @@ header .container-top {
     font-size: 1.2rem;
     color: #4c566a;
     margin-top: 2rem;
-    margin-right: var(--space-between-main-blocks);
+    /* margin-right: var(--space-between-main-blocks); */
   }
 
   .footer {
@@ -322,7 +317,7 @@ header .container-top {
     margin-top: 2rem;
 
     .socials {
-      margin-right: var(--space-between-main-blocks);
+      /* margin-right: var(--space-between-main-blocks); */
     } 
 
     .continue-button {
@@ -403,8 +398,11 @@ header .container-top {
 
 #main .right-bar {
 
+  .section-title {
+    margin: 20px 0;
+  }
+
   .cards {
-    margin-top: 20px;
 
     .article-card:nth-of-type(1) {
       background: center / cover no-repeat url("/img/blog-img/bn-1.jpg");
@@ -442,11 +440,275 @@ header .container-top {
     }
   }
 
+
   .dont-miss {
     margin: 20px 0;
 
     .article-ref {
       display: flex;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      padding-left: 30px;
+    }
+
+    .description .title {
+      font-family: serif;
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    .description .date {
+      color: #4c566a;
+      font-size: 0.8rem;
+      font-style: italic;
+      padding-top: 10px;
+    }
+  }
+
+  .ad {
+    position: relative;
+    background-color: gray;
+    height: 300px;
+    width: 100%;
+
+    .info {
+      position: absolute;
+      left: 20%;
+      top: 40%;
+      font-size: 1.5rem;
+    }
+  }
+
+  .subscribe-form {
+
+    input.email {
+      box-sizing: border-box;
+      background-color: #e5e9f0;
+      border: none;
+      height: 40px;
+      width: 100%;
+      padding-left: 10px;
+    }
+
+    .subscribe-button {
+      display: flex;
+      width: 100%;
+      height: 50px;  
+      background-color: #FF0303;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;    
+
+      a {
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        vertical-align: middle;
+      }
     }
   }
 }
+
+
+/* .titre {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #212121;
+  font-size: 4rem;
+} */
+ 
+
+
+
+.articles-grid {
+  display: flex;
+  justify-content: space-between;
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-small-item {
+    padding:  0px 15px 15px 15px;
+    width: 172px;
+  }
+
+  .article-preview-image {
+    width: 100%;
+    height: 35%;
+  }
+
+  .article-preview-image-small {
+    width: 100%;
+    height: 65%;
+  }
+
+  .article-block {
+    padding-bottom: 15px;
+
+    &:not(.skip) {
+      border-bottom: 2px solid gray;
+      margin-bottom: 20px;
+    }
+  }
+
+  .date {
+    font-size: 0.9rem;
+    color: gray ;
+    font-style: italic;
+    
+  }
+
+  .title {
+    font-size: 1rem;
+    color: black;
+  }
+}
+
+.other-articles-grid {
+  background-color: #f4f4f4;
+  width: 100%;
+
+  .article-block {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 100%;
+    width: min-content;
+    
+    p {
+      color: black;
+    }
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .article-image {
+    width: 250px;
+    height: 175px;
+  }
+}
+
+
+
+
+
+
+
+/* .sept {
+  background-color: #f4f4f4;
+  width: 100%;
+}
+.imagesept {
+  width: 15rem;
+  height: 8rem;
+}
+.margesept {
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+}
+.textmarge {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  height: 100%;
+  width: min-content;
+}
+
+.huit {
+  background-color:rgb(24, 33, 33) ;
+  height: 400px;
+  color: white;
+  display: flex;
+}
+.imagehuit {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.lastdate{
+  font-style: italic;
+} */
+
+
+
+footer {
+  position: relative;
+  background-color: #333;
+  padding: 40px;
+  text-align: center;
+  color: whitesmoke;
+  background: no-repeat center url("/img/bg-img/4.jpg");
+  background-size: cover;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  /* Pour espacer les h4 et texte */
+  align-items: flex-start;  
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #333;
+
+  h4 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+
+  ul {
+    list-style-type: none;
+  
+    li {
+      margin-bottom: 10px;
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.copyright {
+  position: relative;
+  z-index: 1;
+}
+
+/* .footer-columns h4 {
+  
+}
+
+.footer-columns ul {
+  list-style-type: none;
+}
+
+.footer-columns ul li {
+  margin-bottom: 10px;
+}
+
+.footer-columns ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+} */
