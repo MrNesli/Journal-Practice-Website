@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>The Gazette</title>
   </head>
   <body>
@@ -16,7 +18,6 @@
             <p>Brexit breakthrough in Bweek of drama</p>
           </div>
           <div class="currencies">
-            <!-- <div class="exchange"> -->
             <div id="eur-usd" class="exchange">
               <div class="horizontal">
                 <p class="label">EUR/USD</p>
@@ -33,7 +34,6 @@
                 </svg>
                 <p>0.18</p>
               </div>
-  
             </div>
   
             <div id="btc-usd" class="exchange">
@@ -51,10 +51,8 @@
                       c1.902-1.903,2.847-4.093,2.847-6.565C284.929,80.607,283.984,78.417,282.082,76.511z"/>
                   </g>
                 </svg>
-
                 <p>0.18</p>
               </div>
-  
             </div>
   
             <div id="eth-usd" class="exchange">
@@ -73,12 +71,10 @@
                 </svg>
                 <p>0.18</p>
               </div>
-  
             </div>
+
           </div>
         </div>
-        
-        <!-- </div> -->
       </div>
 
       <div id="logo">
@@ -147,7 +143,7 @@
         </div>
       </div>
 
-      <div id="news-carousel">
+      <div id="news-carousel" class="background-dark">
         <!-- Utilise embla ou qqch du genre -->
         <div class="element background-dark">
           <div class="time-online category">10:40</div>
@@ -332,127 +328,6 @@
           </div>
         </div>
 
-        <!-- <div class="grid">
-          <div class="grid-item">
-            <div class="articles-list">
-              <img src="img/blog-img/9.jpg" alt="">
-
-              <div class="category">Video</div>
-              
-              <div class="article">
-                <a href="#" class="title">
-                  Save the eniroment with this step
-                </a>
-                <p class="date">Nov 29, 2017</p>
-              </div>
-              
-              <div class="article">
-                <a href="#" class="title">
-                  Protest to be anounced in January
-                </a>
-                <p class="date">Nov 29, 2017</p>
-              </div>
-              
-              <div class="article">
-                <a href="#" class="title">
-                  10 Bills that the Congress in voting
-                </a>
-                <p class="date">Nov 29, 2017</p>
-              </div>
-              
-              <div class="article">
-                <a href="#" class="title">
-                  The narcissism of Donald Trump
-                </a>
-                <p class="date">Nov 29, 2017</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="grid-item">
-            <div class="mini-article">
-              <img src="img/blog-img/14.jpg" alt="">
-              <div class="category">Others</div>
-
-              <a href="#" class="title">
-                11 hottest toys for this holiday season
-              </a>
-              <p class="date">Nov 29, 2017</p>
-            </div>
-          </div>
-
-          <div class="grid-item">
-            <div class="mini-article">
-              <img src="img/blog-img/15.jpg" alt="">
-              <div class="category">Video</div>
-              
-              <a href="#" class="title">
-                Get this good feeling about life
-              </a>
-              <p class="date">Nov 29, 2017</p>
-            </div>
-          </div>
-
-          <div class="grid-item">
-            <div class="mini-article">
-              <img src="img/blog-img/16.jpg" alt="">
-              <div class="category">Interview</div>
-
-              <a href="#" class="title">
-                Get this good feeling about life
-              </a>
-              <p class="date">Nov 29, 2017</p>
-            </div>
-          </div>
-
-          <div class="grid-item">
-            <div class="mini-article">
-              <img src="img/blog-img/17.jpg" alt="">
-              <div class="category">Video</div>
-
-              <a href="#" class="title">
-                11 hottest toys for this holiday season
-              </a>
-              <p class="date">Nov 29, 2017</p>
-            </div>
-          </div>
-
-          <div class="grid-item">
-            <div class="articles-list">
-              <img src="img/blog-img/12.jpg" alt="">
-              <div class="category">VIDEO</div>
-
-              <div class="article">
-                <a href="#" class="title">
-                  10 Bills that the Congress in voting
-                </a>
-                <p class="date">Nov 29, 2017</p>
-              </div>
-              
-              <div class="article">
-                <a href="#" class="title">
-                  Blair can't save Britain from Brexit
-                </a>
-                <p class="date">Nov 29, 2017</p>
-              </div>
-              
-              <div class="article">
-                <a href="#" class="title">
-                  Save the eniroment with this step
-                </a>
-                <p class="date">Nov 29, 2017</p>
-              </div>
-              
-              <div class="article">
-                <a href="#" class="title">
-                  Protest to be anounced in January
-                </a>
-                <p class="date">Nov 29, 2017</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
         <div class="articles-grid">
           <div>
             <img src="img/blog-img/12.jpg" alt="boite vote" class="article-preview-image">
@@ -525,269 +400,103 @@
             </div>
           </div>
         </div>
+      </div>
 
-    <div class="other-articles-grid">
-      <div class="row">
-        <div class="article-block">
-          <img src="img/blog-img/4.jpg" alt="mannif" class="article-image">
-          <p>Show suspended by PBS amid misconduct</p>
-        </div>
-        <div class="article-block">
-          <img src="img/blog-img/5.jpg" alt="boite plus livre" class="article-image">
-          <p>Parents to Congress</p>
-        </div>
-        <div class="article-block">
-          <img src="img/blog-img/6.jpg" alt="us photo" class="article-image">
-          <p>Third Buy for This "Millionaire Maker" Stock</p>
-        </div>
-        <div class="article-block">
-          <img src="img/blog-img/7.jpg" alt="mannif 2" class="article-image">
-          <p>The Chicago Mercantile Exchange is set to begin</p>
+      <div class="other-articles-grid">
+        <div class="container-top">
+          <div class="row">
+            <div class="article-block">
+              <img src="img/blog-img/4.jpg" alt="mannif" class="article-image">
+              <a href="#">Show suspended by PBS amid misconduct</a>
+            </div>
+            <div class="article-block">
+              <img src="img/blog-img/5.jpg" alt="boite plus livre" class="article-image">
+              <a href="#">Parents to Congress</a>
+            </div>
+            <div class="article-block">
+              <img src="img/blog-img/6.jpg" alt="us photo" class="article-image">
+              <a href="#">Third Buy for This "Millionaire Maker" Stock</a>
+            </div>
+            <div class="article-block">
+              <img src="img/blog-img/7.jpg" alt="mannif 2" class="article-image">
+              <a href="#">The Chicago Mercantile Exchange is set to begin</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="article-block">
+              <img src="img/blog-img/8.jpg" alt="journal" class="article-image">
+              <a href="#">Trading bitcoin futures</a>
+            </div>
+            <div class="article-block">
+              <img src="img/blog-img/9.jpg" alt="palais de justice" class="article-image">
+              <a href="#">Are 'Micro-Mansions' the Next Big Thing?</a>
+            </div>
+            <div class="article-block">
+              <img src="img/blog-img/10.jpg" alt="mannif3" class="article-image">
+              <a href="#">McKinney's target market</a>
+            </div>
+            <div class="article-block">
+              <img src="img/blog-img/11.jpg" alt="mannif noir/blanc" class="article-image">
+              <a href="#">Australian Property Prices Remain Flat</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="article-block">
-          <img src="img/blog-img/8.jpg" alt="journal" class="article-image">
-          <p>Trading bitcoin futures</p>
-        </div>
-        <div class="article-block">
-          <img src="img/blog-img/9.jpg" alt="palais de justice" class="article-image">
-          <p>Are 'Micro-Mansions' the Next Big Thing?</p>
-        </div>
-        <div class="article-block">
-          <img src="img/blog-img/10.jpg" alt="mannif3" class="article-image">
-          <p>McKinney's target market</p>
-        </div>
-        <div class="article-block">
-          <img src="img/blog-img/11.jpg" alt="mannif noir/blanc" class="article-image">
-          <p>Australian Property Prices Remain Flat</p>
+
+      <div class="background-dark">
+        <div class="container-top">
+          <div class="article-slider swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="article">
+                  <img src="img/blog-img/bitcoin.jpg" alt="">
+                  <div class="description">
+                    <div class="category">EDITORIAL</div>
+                    <h2 class="title"><a href="#">Move over, bitcoin. Here comes liteconin</a></h2>
+                    <p class="date">March 29, 2016</p>
+                    <p class="text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis...
+                    </p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="swiper-slide">
+                <div class="article">
+                  <img src="img/blog-img/bitcoin.jpg" alt="">
+                  <div class="description">
+                    <div class="category">EDITORIAL</div>
+                    <h2 class="title"><a href="#">Move over, bitcoin. Here comes liteconin</a></h2>
+                    <p class="date">March 29, 2016</p>
+                    <p class="text"> 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis...
+                    </p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="swiper-slide">
+                <div class="article">
+                  <img src="img/blog-img/bitcoin.jpg" alt="">
+                  <div class="description">
+                    <div class="category">EDITORIAL</div>
+                    <h2 class="title"><a href="#">Move over, bitcoin. Here comes liteconin</a></h2>
+                    <p class="date">March 29, 2016</p>
+                    <p class="text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-
-      <!-- <div class="container other-articles">
-        <div class="articles">
-          <div class="row">
-            <div class="article">
-              <img src="img/blog-img/4.jpg" alt="">
-              <a href="#">
-                Show suspended by PBS amid misconduct allegations
-              </a>
-            </div>
-
-            <div class="article">
-              <img src="img/blog-img/5.jpg" alt="">
-              <a href="#">
-                Parents to Congress
-              </a>
-            </div>
-
-            <div class="article">
-              <img src="img/blog-img/6.jpg" alt="">
-              <a href="#">
-                Third Buy Alert for This “Millionaire Maker” Stock
-              </a>
-            </div>
-
-            <div class="article">
-              <img src="img/blog-img/7.jpg" alt="">
-              <a href="#">
-                The Chicago Mercantile Exchange is set to begin
-              </a>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="article">
-              <img src="img/blog-img/8.jpg" alt="">
-              <a href="#">
-                Trading bitcoin futures
-              </a>
-            </div>
-
-            <div class="article">
-              <img src="img/blog-img/9.jpg" alt="">
-              <a href="#">
-                Are ‘Micro-Mansions’ the Next Big Thing?
-              </a>
-            </div>
-
-            <div class="article">
-              <img src="img/blog-img/10.jpg" alt="">
-              <a href="#">
-                McKinney’s target market
-              </a>
-            </div>
-
-            <div class="article">
-              <img src="img/blog-img/11.jpg" alt="">
-              <a href="#">
-                Australian Property Prices Remain Flat
-              </a>
-            </div>
-          </div>
-        </div>
-      </div> -->
-    </section>
-
-    <section id="articles-slider">
-      <!-- Utilise Swiper.js pour le slider -->
-       <swiper-container>
-        <swiper-slide>
-          <div class="article">
-            <img src="" alt="">
-            <div class="description">
-              <div class="category">EDITORIAL</div>
-              
-              <h2 class="title">
-                <a href="#">
-                  Move over, bitcoin. Here comes liteconin
-                </a>
-              </h2>
-              <p class="date">March 29, 2016</p>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis...
-              </p>
-            </div>
-          </div>
-        </swiper-slide>
-
-        <swiper-slide>
-          <div class="article">
-            <img src="" alt="">
-            <div class="description">
-              <div class="category">EDITORIAL</div>
-              
-              <h2 class="title">
-                <a href="#">
-                  Move over, bitcoin. Here comes liteconin
-                </a>
-              </h2>
-              <p class="date">March 29, 2016</p>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis...
-              </p>
-            </div>
-          </div>
-        </swiper-slide>
-
-        <swiper-slide>
-          <div class="article">
-            <img src="" alt="">
-            <div class="description">
-              <div class="category">EDITORIAL</div>
-              
-              <h2 class="title">
-                <a href="#">
-                  Move over, bitcoin. Here comes liteconin
-                </a>
-              </h2>
-              <p class="date">March 29, 2016</p>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis...
-              </p>
-            </div>
-          </div>
-        </swiper-slide>
-       </swiper-container>
+      
     </section>
 
     <footer>
-      <!-- <div class="container">
-        <div class="lists">
-          <div class="block">
-            <div class="list-contact">
-              <h3 class="title">Regions</h3>
-    
-              <div class="links">
-                <a href="#">U.S.</a>
-                <a href="#">Africa</a>
-                <a href="#">Americas</a>
-                <a href="#">Asia</a>
-                <a href="#">China</a>
-                <a href="#">Middle</a>
-                <a href="#">East</a>
-                <a href="#">Opinion</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="block">
-            <div class="list-contact">
-              <h3 class="title">Fashion</h3>
-    
-              <div class="links">
-                <a href="#">Election 2016</a>
-                <a href="#">Nation</a>
-                <a href="#">World</a>
-                <a href="#">Our Team</a>
-              </div>
-            </div>
-            <div class="list-contact">
-              <h3 class="title">Politics</h3>
-    
-              <div class="links">
-                <a href="#">Business</a>
-                <a href="#">Markets</a>
-                <a href="#">Tech</a>
-                <a href="#">Luxury</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="block">
-            <div class="list-contact">
-              <h3 class="title">Featured</h3>
-    
-              <div class="links">
-                <a href="#">Football</a>
-                <a href="#">Golf</a>
-                <a href="#">Tennis</a>
-                <a href="#">Motorsport</a>
-                <a href="#">Horseracing</a>
-                <a href="#">Sailing</a>
-                <a href="#">Equestrian</a>
-                <a href="#">Skiing</a>
-              </div>
-            </div>
-            <div class="list-contact">
-              <h3 class="title">FAQ</h3>
-              
-              <div class="links">
-                <a href="#">Aviation</a>
-                <a href="#">Business</a>
-                <a href="#">Traveller</a>
-                <a href="#">Destinations</a>
-                <a href="#">Features</a>
-                <a href="#">Food/Drink</a>
-                <a href="#">Hotels</a>
-                <a href="#">Partner Hotels</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="block">
-            <div class="list-contact">
-              <h3 class="title">+More</h3>
-
-              <div class="links">
-                <a href="#">Fashion</a>
-                <a href="#">Design</a>
-                <a href="#">Architecture</a>
-                <a href="#">Arts</a>
-                <a href="#">Autos</a>
-                <a href="#">Luxury</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <h5 class="copyright">Copyright @2024 All Rights Reserved</h5>
-      </div> -->
       <div class="footer-columns">
         <div class="column">
           <h4>Regions</h4>
@@ -860,7 +569,7 @@
           </ul>
         </div>
       </div>
-      <!-- <hr /> -->
+
       <p class="copyright">
         &copy; 2024 All rights reserved | This template is made with
         <span class="heart">❤</span> by Colorlib
@@ -868,6 +577,6 @@
       <a href="#top" class="back-to-top">&#9650;</a>
     </footer>
     
-    <!-- <script type="module" src="/scripts/main.js"></script> -->
+    <script type="module" src="/scripts/main.js"></script>
   </body>
 </html>
