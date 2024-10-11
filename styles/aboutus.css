@@ -260,7 +260,7 @@ a {
 .social-links img {
   width: 25px; 
   height: 25px; 
-  object-fit: cover
+  object-fit: cover;
 }
 
 .social-links a {
@@ -374,9 +374,6 @@ a {
 .currency {
   font-size: 0.9em;
 }
-
-
-
 
 .end {
   bottom: 0;
@@ -700,8 +697,4 @@ button:hover {
   background-color: #ffffff;
   color: black;
 }
-
-
-
-/* animation fade  */
 
