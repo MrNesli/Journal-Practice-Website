@@ -4,232 +4,310 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Gazette - About Us</title>
-    <link rel="stylesheet" href="styles/abouts.css" />
-    <link rel="stylesheet" href="loupe.js" />
-    <link
+    <link rel="stylesheet" href="styles/aboutus.css" />
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <script src="Crypto.js"></script>
-    <style>
-      /* Fade-in Animation */
-      .fade-in {
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-      }
+    /> -->
 
-      .fade-in.visible {
-        opacity: 1;
-      }
-    </style>
   </head>
   <body>
     <header>
-      <div class="breaking-news">
-        <div class="news-content">
-          <p>BREAKING NEWS: <br />Brexit breakthrough in 8-week drama</p>
-          <p class="currency">
-            EUR/USD: <span id="B1" class="stock-value down">0.18</span> |
-            BTC/USD:
-
-            <span id="B2" class="stock-value down">8.60</span> | ETH/USD:
-            <span id="B3" class="stock-value up">13.60</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="top-bar">
-        <div class="logo">
-          <h1>
-            <span class="the">THE</span> <span class="gazette">GAZETTE</span>
-          </h1>
-        </div>
-
-        <div class="ad-banner">YOUR ADD HERE</div>
-      </div>
-
-      <nav>
-        <ul class="list">
-          <li><a href="#" class="Todayred">Today</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Politics</a></li>
-          <li><a href="#">Lifestyle</a></li>
-          <li><a href="#">Travel</a></li>
-          <li><a href="#">Health</a></li>
-          <li><a href="#">Entertainment</a></li>
-          <li><a href="#">Sport</a></li>
-          <li><a href="./CHATBOT.html" class="color-change-link">???</a></li>
-          <div class="search-container">
-            <input
-              type="text"
-              id="searchInput"
-              placeholder="Type to Search..."
-              onkeyup="filterTable()"
-            />
-            <button type="submit" class="search-btn">
-              <i class="fa fa-search"></i>
-              <!-- Icone de la loupe -->
-            </button>
+      <div id="top-bar">
+        <div class="container-top">
+          <div class="breaking-news">
+            <h4>BREAKING NEWS</h4>
+            <p>Brexit breakthrough in Bweek of drama</p>
           </div>
-        </ul>
-      </nav>
-    </header>
-
-    <section class="about-us">
-      <div class="abouto">
-        <h2>About Us</h2>
-        <p class="date">28 November 2017</p>
-      </div>
-      <div class="history">
-        <h3>Sort History</h3>
-        <div class="text-container">
-          <p class="text-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            dignissimos nulla commodi illo voluptate quod minus unde dolore
-            molestiae dicta rem praesentium officiis alias eum tempora vitae ut,
-            tempore accusamus. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Eos nobis obcaecati incidunt officiis. Ab rem at
-            non? Animi, obcaecati vero. Dignissimos, debitis cum mollitia alias
-            illum accusantium tenetur quaerat cupiditate.
-          </p>
-          <p class="text-right">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-            consectetur consequuntur architecto enim neque quod, sunt veniam
-            libero perspiciatis magnam debitis officia aut, ullam natus unde, ab
-            eum id repudiandae! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Cum doloribus, assumenda reprehenderit quae
-            quibusdam excepturi inventore eum quaerat vitae fuga tempore
-            pariatur ipsa fugit, dolorum vero quasi adipisci aliquid rerum!
-          </p>
-        </div>
-      </div>
-
-      <div class="team">
-        <h3>Our Team</h3>
-        <div class="team-members">
-          <div class="member">
-            <img src="./img/t1.jpg" alt="Jane Doe" />
-            <h4>Jane Doe</h4>
-            <p>Editor</p>
-            <div class="social-links"></div>
-            <img
-              alt="Facebook"
-              fetchpriority="high"
-              src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png"
-              style="width: 25px; height: 25px; object-fit: cover"
-            />
-            <img
-              alt="Twitter"
-              fetchpriority="high"
-              src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png"
-              style="width: 25px; height: 25px; object-fit: cover"
-            />
-            <img
-              alt="Instagram"
-              fetchpriority="high"
-              src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png"
-              style="width: 25px; height: 25px; object-fit: cover"
-            />
-            <img
-              alt="YouTube"
-              fetchpriority="high"
-              src="https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png"
-              style="width: 25px; height: 25px; object-fit: cover"
-            />
-          </div>
-          <div class="member">
-            <img src="./img/t2.jpg" alt="Jane Doe" />
-            <h4>Jane Doe</h4>
-            <p>Editor</p>
-            <div class="social-links">
-              <div class="social-icons">
-                <img
-                  alt="Facebook"
-                  fetchpriority="high"
-                  src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png"
-                  style="width: 25px; height: 25px; object-fit: cover"
-                />
-                <img
-                  alt="Twitter"
-                  fetchpriority="high"
-                  src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png"
-                  style="width: 25px; height: 25px; object-fit: cover"
-                />
-                <img
-                  alt="Instagram"
-                  fetchpriority="high"
-                  src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png"
-                  style="width: 25px; height: 25px; object-fit: cover"
-                />
-                <img
-                  alt="YouTube"
-                  fetchpriority="high"
-                  src="https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png"
-                  style="width: 25px; height: 25px; object-fit: cover"
-                />
+          <div class="currencies">
+            <div id="eur-usd" class="exchange">
+              <div class="horizontal">
+                <p class="label">EUR/USD</p>
+                <p class="current-rate">1.1862</p>
+              </div>
+  
+              <div class="live-rate positive">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 612 612" xml:space="preserve">
+                  <g>
+                    <path d="M604.501,440.509L325.398,134.956c-5.331-5.357-12.423-7.627-19.386-7.27c-6.989-0.357-14.056,1.913-19.387,7.27
+                      L7.499,440.509c-9.999,10.024-9.999,26.298,0,36.323s26.223,10.024,36.222,0l262.293-287.164L568.28,476.832
+                      c9.999,10.024,26.222,10.024,36.221,0C614.5,466.809,614.5,450.534,604.501,440.509z"/>
+                  </g>
+                </svg>
+                <p>0.18</p>
               </div>
             </div>
-          </div>
-          <div class="member">
-            <img src="./img/t3.jpg" alt="Jane Doe" />
-            <h4>Jane Doe</h4>
-            <p>Editor</p>
-            <div class="social-links">
-              <img
-                alt="Facebook"
-                fetchpriority="high"
-                src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png"
-                style="width: 25px; height: 25px; object-fit: cover"
-              />
-              <img
-                alt="Twitter"
-                fetchpriority="high"
-                src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png"
-                style="width: 25px; height: 25px; object-fit: cover"
-              />
-              <img
-                alt="Instagram"
-                fetchpriority="high"
-                src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png"
-                style="width: 25px; height: 25px; object-fit: cover"
-              />
-              <img
-                alt="YouTube"
-                fetchpriority="high"
-                src="https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png"
-                style="width: 25px; height: 25px; object-fit: cover"
-              />
+  
+            <div id="btc-usd" class="exchange">
+              <div class="horizontal">
+                <p class="label">BTC/USD</p>
+                <p class="current-rate">1.1862</p>
+              </div>
+  
+              <div class="live-rate negative">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 284.929 284.929" xml:space="preserve">
+                  <g>
+                    <path d="M282.082,76.511l-14.274-14.273c-1.902-1.906-4.093-2.856-6.57-2.856c-2.471,0-4.661,0.95-6.563,2.856L142.466,174.441
+                      L30.262,62.241c-1.903-1.906-4.093-2.856-6.567-2.856c-2.475,0-4.665,0.95-6.567,2.856L2.856,76.515C0.95,78.417,0,80.607,0,83.082
+                      c0,2.473,0.953,4.663,2.856,6.565l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854L282.082,89.647
+                      c1.902-1.903,2.847-4.093,2.847-6.565C284.929,80.607,283.984,78.417,282.082,76.511z"/>
+                  </g>
+                </svg>
+                <p>0.18</p>
+              </div>
             </div>
+  
+            <div id="eth-usd" class="exchange">
+              <div class="horizontal">
+                <p class="label">ETH/USD</p>
+                <p class="current-rate">1.1862</p>
+              </div>
+  
+              <div class="live-rate positive">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 612 612" xml:space="preserve">
+                  <g>
+                    <path d="M604.501,440.509L325.398,134.956c-5.331-5.357-12.423-7.627-19.386-7.27c-6.989-0.357-14.056,1.913-19.387,7.27
+                      L7.499,440.509c-9.999,10.024-9.999,26.298,0,36.323s26.223,10.024,36.222,0l262.293-287.164L568.28,476.832
+                      c9.999,10.024,26.222,10.024,36.221,0C614.5,466.809,614.5,450.534,604.501,440.509z"/>
+                  </g>
+                </svg>
+                <p>0.18</p>
+              </div>
+            </div>
+
           </div>
-          <div class="member">
-            <img src="./img/t4.jpg" alt="Jane Doe" />
-            <h4>Jane Doe</h4>
-            <p>Editor</p>
-            <div class="social-links">
-              <img
-                alt="Facebook"
-                fetchpriority="high"
-                src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png"
-                style="width: 25px; height: 25px; object-fit: cover"
-              />
-              <img
-                alt="Twitter"
-                fetchpriority="high"
-                src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png"
-                style="width: 25px; height: 25px; object-fit: cover"
-              />
-              <img
-                alt="Instagram"
-                fetchpriority="high"
-                src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png"
-                style="width: 25px; height: 25px; object-fit: cover"
-              />
-              <img
-                alt="YouTube"
-                fetchpriority="high"
-                src="https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png"
-                style="width: 25px; height: 25px; object-fit: cover"
-              />
+        </div>
+      </div>
+
+      <div id="logo">
+        <img src="img/core-img/logo.png" alt="logo">
+        <div class="ad">
+          <p class="info">YOUR AD HERE</p>
+        </div>
+      </div>
+
+      <div id="menu-bar">
+        <div class="container">
+          <nav class="navigation">
+            <ul>
+              <li><a href="#">Today</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Politics</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Travel</a></li>
+              <li><a href="#">Health</a></li>
+              <li><a href="#">Entertainment</a></li>
+              <li><a href="#">Sport</a></li>
+            </ul>
+          </nav>
+  
+          <div class="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 612.08 612.08" xml:space="preserve">
+              <g>
+                <path d="M237.927,0C106.555,0,0.035,106.52,0.035,237.893c0,131.373,106.52,237.893,237.893,237.893
+                  c50.518,0,97.368-15.757,135.879-42.597l0.028-0.028l176.432,176.433c3.274,3.274,8.48,3.358,11.839,0l47.551-47.551
+                  c3.274-3.274,3.106-8.703-0.028-11.838L433.223,373.8c26.84-38.539,42.597-85.39,42.597-135.907C475.82,106.52,369.3,0,237.927,0z
+                   M237.927,419.811c-100.475,0-181.918-81.443-181.918-181.918S137.453,55.975,237.927,55.975s181.918,81.443,181.918,181.918
+                  S338.402,419.811,237.927,419.811z"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <section id="main">
+      <div class="about-us">
+        <div class="container">
+          <div class="abouto">
+            <h2 class="title">About Us</h2>
+            <p class="date">28 November 2017</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="container">
+          <h3 class="title">Sort History</h3>
+          <div class="text-container">
+            <p class="text-left">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              dignissimos nulla commodi illo voluptate quod minus unde dolore
+              molestiae dicta rem praesentium officiis alias eum tempora vitae ut,
+              tempore accusamus. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Eos nobis obcaecati incidunt officiis. Ab rem at
+              non? Animi, obcaecati vero. Dignissimos, debitis cum mollitia alias
+              illum accusantium tenetur quaerat cupiditate.
+            </p>
+            <p class="text-right">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+              consectetur consequuntur architecto enim neque quod, sunt veniam
+              libero perspiciatis magnam debitis officia aut, ullam natus unde, ab
+              eum id repudiandae! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Cum doloribus, assumenda reprehenderit quae
+              quibusdam excepturi inventore eum quaerat vitae fuga tempore
+              pariatur ipsa fugit, dolorum vero quasi adipisci aliquid rerum!
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="team">
+        <div class="container">
+          <h3 class="title">Our Team</h3>
+          <div class="team-members">
+            <div class="member">
+              <img src="img/bg-img/t1.jpg" class="profile" alt="Jane Doe" />
+              <h4>Jane Doe</h4>
+              <p>Editor</p>
+              <div class="social-links">
+                <a href="#">
+                  <img
+                    alt="Facebook"
+                    fetchpriority="high"
+                    src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png"
+                  />
+                </a>
+                
+                <a href="#">
+                  <img
+                    alt="Twitter"
+                    fetchpriority="high"
+                    src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    alt="Instagram"
+                    fetchpriority="high"
+                    src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    alt="YouTube"
+                    fetchpriority="high"
+                    src="https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png"
+                  />
+                </a>
+              </div>
+              
+            </div>
+            <div class="member">
+              <img src="img/bg-img/t2.jpg" alt="Jane Doe" />
+              <h4>Jane Doe</h4>
+              <p>Editor</p>
+              <div class="social-links">
+                <div class="social-icons">
+                  <a href="#">                
+                    <img
+                      alt="Facebook"
+                      fetchpriority="high"
+                      src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png"
+                    />
+                  </a>
+              
+                  <a href="#">
+                    <img
+                      alt="Twitter"
+                      fetchpriority="high"
+                      src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png"
+                    />
+                  </a>
+              
+                  <a href="#">
+                    <img
+                      alt="Instagram"
+                      fetchpriority="high"
+                      src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png"
+                    />
+                  </a>
+              
+                  <a href="#">
+                    <img
+                      alt="YouTube"
+                      fetchpriority="high"
+                      src="https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="member">
+              <img src="img/bg-img/t3.jpg" alt="Jane Doe" />
+              <h4>Jane Doe</h4>
+              <p>Editor</p>
+              <div class="social-links">
+                <a href="#">
+                  <img
+                    alt="Facebook"
+                    fetchpriority="high"
+                    src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png"
+                  />
+                </a>
+
+                <a href="#">
+                  <img
+                    alt="Twitter"
+                    fetchpriority="high"
+                    src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png"
+                  />
+                </a>
+
+                <a href="#">
+                  <img
+                    alt="Instagram"
+                    fetchpriority="high"
+                    src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png"
+                  />
+                </a>
+
+                <a>              
+                  <img
+                    alt="YouTube"
+                    fetchpriority="high"
+                    src="https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="member">
+              <img src="img/bg-img/t4.jpg" alt="Jane Doe" />
+              <h4>Jane Doe</h4>
+              <p>Editor</p>
+              <div class="social-links">
+                <a href="#">
+                  <img
+                    alt="Facebook"
+                    fetchpriority="high"
+                    src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    alt="Twitter"
+                    fetchpriority="high"
+                    src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    alt="Instagram"
+                    fetchpriority="high"
+                    src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    alt="YouTube"
+                    fetchpriority="high"
+                    src="https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>

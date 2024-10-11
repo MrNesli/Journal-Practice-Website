@@ -157,12 +157,27 @@ a {
   height: 200px;
   background-color: white;
   align-items: center;
+  justify-content: center;
   border-bottom: 1px solid var(--separator-border-color);
 
   img {
     width: 420px;
     height: 41px;
-    margin: 0 auto;
+    margin-right: 40px;
+  }
+
+  .ad {
+    position: relative;
+    background-color: lightgray;
+    height: 125px;
+    width: 50%;
+
+    .info {
+      position: absolute;
+      left: 40%;
+      top: 35%;
+      font-size: 1.8rem;
+    }
   }
 }
 
@@ -178,6 +193,7 @@ a {
     padding: 16px 0;
     margin: 0 auto;
     justify-content: space-between;
+    align-items: center;
 
     .navigation {
       ul {
