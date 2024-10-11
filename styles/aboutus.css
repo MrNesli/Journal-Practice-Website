@@ -5,99 +5,233 @@
   font-family: Arial, sans-serif;
 }
 
-body {
-  color: #333;
-  line-height: 1.6;
+:root {
+  /* font-family: Arial, sans-serif; */
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+  
+  --top-bar-background-color: #1D1D1D;
+  --live-rate-negative-color: #CD0909;
+  --live-rate-positive-color: #2C980C;
+  --separator-border-color: #CFCFCF;
+  --rate-color: #7C7C7C;
 }
 
-header {
-  background: #ffffff;
-  color: #fff;
-  padding: 10px 0;
+a {
+  text-decoration: none;
 }
 
-.breaking-news {
-  background-color: rgb(54, 54, 54);
-  padding: 10px;
-  text-align: left;
+.horizontal {
+  display: flex;
 }
 
-.top-bar {
+/* ---- Top bar of the page ---- */
+
+#top-bar {
+  background-color: var(--top-bar-background-color);
+
+  .container-top {
+    height: 100px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .breaking-news h4 {
+    line-height: 18px;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .currencies {
+    display: flex;
+  
+    .exchange {
+      padding: 0 32px;
+  
+      .horizontal {
+        .label {
+          padding: 0 16px 0 0;
+          font-weight: 600;
+        }
+    
+        .current-rate {
+          color: var(--rate-color);
+        }
+      }
+    
+      .live-rate {
+        display: flex;
+        align-items: center;
+        
+        p {
+          color: var(--live-rate-positive-color);
+          font-size: 1.5rem;
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+          margin-right: 16px;
+          fill-rule: evenodd;
+          clip-rule: evenodd;
+          stroke-linejoin: round;
+          stroke-miterlimit: 2;
+        }
+      }
+    
+      .negative {
+        svg {
+          fill: var(--live-rate-negative-color) !important;
+        }
+        p {
+          color: var(--live-rate-negative-color);
+        }
+      }
+      .positive {
+        svg {
+          fill: var(--live-rate-positive-color) !important;
+        }
+        p {
+          color: var(--live-rate-positive-color);
+        }
+      }
+    }
+  }
+}
+
+/* ---- Logo ---- */
+#logo {
+  display: flex;
+  height: 200px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--separator-border-color);
+
+  img {
+      width: 420px;
+      height: 41px;
+      margin-right: 40px;
+    }
+  
+    .ad {
+      position: relative;
+      background-color: lightgray;
+      height: 125px;
+      width: 50%;
+  
+      .info {
+        position: absolute;
+        left: 40%;
+        top: 35%;
+        font-size: 1.8rem;
+      }
+    }
+}
+
+/* ---- Main Menu ---- */
+#menu-bar {
+  background-color: white;
+
+  .container {
+      display: flex;
+      width: 90%;
+      padding: 16px 0;
+      margin: 0 auto;
+      justify-content: space-between;
+      align-items: center;
+
+      .navigation {
+        ul {
+            display: flex;
+            list-style-type: none;
+        
+            li {
+            padding-left: 16px;
+            
+            a {
+                font-size: 1.5em;
+                text-transform: uppercase;
+                color: black;
+                text-decoration: none;
+            }
+          }
+        }
+      }
+
+      .search-button {
+      width: 30px;
+      height: 30px;
+      }
+  }  
+}
+
+#main .container {
+  width: 90%;
+  margin: 0 auto; 
+}
+
+.about-us {
+  /* width: 100%; */
+  background-color: #dfdfdf;
+  
+}
+
+.abouto {
+  color: rgb(0, 0, 0);
+  padding: 40px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  position: relative;
-}
 
-/* Nouvelle classe pour le currency pour le placer à droite */
-.currency {
-  position: absolute;
-  right: 20px;
-  font-weight: bold;
-}
+  h2 {
+    font-size: 2.5em;
+  }
 
-.currency p {
-  margin-right: 20px;
-  font-size: 0.9em;
-}
-
-.currency span.up {
-  color: green;
-}
-
-.currency span.down {
-  color: red;
-}
-/* Crypto    */
-
-.list .Todayred {
-  color: #d32f2f; /* Couleur active (rouge) pour TODAY */
-}
-
-.list a:hover {
-  color: #d32f2f;
-}
-nav ul {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  background: #f4f4f4;
-  list-style-type: none;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-section.about-us {
-  padding: 20px;
-  text-align: center;
-}
-
-.about-us h2 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.about-us .date {
-  color: gray;
-  margin-bottom: 30px;
+  .date {
+    color: gray;
+  }
 }
 
 .history {
   text-align: left;
-  padding: 0 50px;
+  margin: 100px 0;  
+}
+
+.title {
+  font-size: 3rem;
+  font-family: serif;
+  color: black;
+}
+
+/* pour séparer texte  */
+.text-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(0, 0, 0);
+
+  p {
+    font-size: 1.3rem;
+  }
+}   
+
+.text-left {
+  
+  margin-right: 50px;
 }
 
 .team {
   margin: 40px 0;
+  color: rgb(0, 0, 0);
 }
 
 .team-members {
@@ -108,12 +242,25 @@ section.about-us {
 
 .member {
   text-align: center;
-  width: 200px;
+  width: 15%;
+
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
 }
 
-.member img {
-  width: 100%;
-  border-radius: 50%;
+.social-links img {
+  width: 25px; 
+  height: 25px; 
+  object-fit: cover
 }
 
 .social-links a {
@@ -126,7 +273,7 @@ section.about-us {
   color: whitesmoke;
   position: relative;
   height: 50vh;
-  background: url(./img/cta.jpg) no-repeat center;
+  background: url(/img/blog-img/cta.jpg) no-repeat center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -213,15 +360,6 @@ section.about-us {
   border: 1px solid #ccc;
 }
 
-.breaking-news {
-  background-color: rgb(54, 54, 54);
-  padding: 10px;
-  color: white;
-  display: flex;
-  justify-content: space-between; /* Espace entre les éléments */
-  align-items: center;
-}
-
 .news-content {
   display: flex; /* Permet d'afficher le texte des breaking news et des currencies sur la même ligne */
   justify-content: flex-start;
@@ -237,27 +375,8 @@ section.about-us {
   font-size: 0.9em;
 }
 
-.abouto {
-  background-color: rgb(250, 250, 250);
-  padding: 10px;
-  color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-/* pour séparer texte  */
-.text-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #f4f4f4;
-}
 
-.text-left {
-  margin-right: 20px;
-}
 
 .end {
   bottom: 0;
@@ -270,7 +389,7 @@ footer {
   padding: 40px;
   text-align: center;
   color: whitesmoke;
-  background: url(./img/4.jpg) no-repeat center;
+  background: url(/img/bg-img/4.jpg) no-repeat center;
   background-size: cover;
   height: auto;
 }
