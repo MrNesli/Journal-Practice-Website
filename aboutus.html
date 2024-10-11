@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Gazette - About Us</title>
+    <link rel="stylesheet" href="styles/abouts.css" />
+    <link rel="stylesheet" href="loupe.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="Crypto.js"></script>
+    <style>
+      /* Fade-in Animation */
+      .fade-in {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="breaking-news">
+        <div class="news-content">
+          <p>BREAKING NEWS: <br />Brexit breakthrough in 8-week drama</p>
+          <p class="currency">
+            EUR/USD: <span id="B1" class="stock-value down">0.18</span> |
+            BTC/USD:
+
+            <span id="B2" class="stock-value down">8.60</span> | ETH/USD:
+            <span id="B3" class="stock-value up">13.60</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="top-bar">
+        <div class="logo">
+          <h1>
+            <span class="the">THE</span> <span class="gazette">GAZETTE</span>
+          </h1>
+        </div>
+
+        <div class="ad-banner">YOUR ADD HERE</div>
+      </div>
+
+      <nav>
+        <ul class="list">
+          <li><a href="#" class="Todayred">Today</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">Lifestyle</a></li>
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">Health</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Sport</a></li>
+          <li><a href="./CHATBOT.html" class="color-change-link">???</a></li>
+          <div class="search-container">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Type to Search..."
+              onkeyup="filterTable()"
+            />
+            <button type="submit" class="search-btn">
+              <i class="fa fa-search"></i>
+              <!-- Icone de la loupe -->
+            </button>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="about-us">
+      <div class="abouto">
+        <h2>About Us</h2>
+        <p class="date">28 November 2017</p>
+      </div>
+      <div class="history">
+        <h3>Sort History</h3>
+        <div class="text-container">
+          <p class="text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            dignissimos nulla commodi illo voluptate quod minus unde dolore
+            molestiae dicta rem praesentium officiis alias eum tempora vitae ut,
+            tempore accusamus. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Eos nobis obcaecati incidunt officiis. Ab rem at
+            non? Animi, obcaecati vero. Dignissimos, debitis cum mollitia alias
+            illum accusantium tenetur quaerat cupiditate.
+          </p>
+          <p class="text-right">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+            consectetur consequuntur architecto enim neque quod, sunt veniam
+            libero perspiciatis magnam debitis officia aut, ullam natus unde, ab
+            eum id repudiandae! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Cum doloribus, assumenda reprehenderit quae
+            quibusdam excepturi inventore eum quaerat vitae fuga tempore
+            pariatur ipsa fugit, dolorum vero quasi adipisci aliquid rerum!
+          </p>
+        </div>
+      </div>
+
+      <div class="team">
+        <h3>Our Team</h3>
+        <div class="team-members">
+          <div class="member">
+            <img src="./img/t1.jpg" alt="Jane Doe" />
+            <h4>Jane Doe</h4>
+            <p>Editor</p>
+            <div class="social-links"></div>
+            <img
+              alt="Facebook"
+              fetchpriority="high"
+              src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png"
+              style="width: 25px; height: 25px; object-fit: cover"
+            />
+            <img
+              alt="Twitter"
+              fetchpriority="high"
+              src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png"
+              style="width: 25px; height: 25px; object-fit: cover"
+            />
+            <img
+              alt="Instagram"
+              fetchpriority="high"
+              src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png"
+              style="width: 25px; height: 25px; object-fit: cover"
+            />
+            <img
+              alt="YouTube"
+              fetchpriority="high"
+              src="https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png"
+              style="width: 25px; height: 25px; object-fit: cover"
+            />
+          </div>
+          <div class="member">
+            <img src="./img/t2.jpg" alt="Jane Doe" />
+            <h4>Jane Doe</h4>
+            <p>Editor</p>
+            <div class="social-links">
+              <div class="social-icons">
+                <img
+                  alt="Facebook"
+                  fetchpriority="high"
+                  src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png"
+                  style="width: 25px; height: 25px; object-fit: cover"
+                />
+                <img
+                  alt="Twitter"
+                  fetchpriority="high"
+                  src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png"
+                  style="width: 25px; height: 25px; object-fit: cover"
+                />
+                <img
+                  alt="Instagram"
+                  fetchpriority="high"
+                  src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png"
+                  style="width: 25px; height: 25px; object-fit: cover"
+                />
+                <img
+                  alt="YouTube"
+                  fetchpriority="high"
+                  src="https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png"
+                  style="width: 25px; height: 25px; object-fit: cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="member">
+            <img src="./img/t3.jpg" alt="Jane Doe" />
+            <h4>Jane Doe</h4>
+            <p>Editor</p>
+            <div class="social-links">
+              <img
+                alt="Facebook"
+                fetchpriority="high"
+                src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png"
+                style="width: 25px; height: 25px; object-fit: cover"
+              />
+              <img
+                alt="Twitter"
+                fetchpriority="high"
+                src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png"
+                style="width: 25px; height: 25px; object-fit: cover"
+              />
+              <img
+                alt="Instagram"
+                fetchpriority="high"
+                src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png"
+                style="width: 25px; height: 25px; object-fit: cover"
+              />
+              <img
+                alt="YouTube"
+                fetchpriority="high"
+                src="https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png"
+                style="width: 25px; height: 25px; object-fit: cover"
+              />
+            </div>
+          </div>
+          <div class="member">
+            <img src="./img/t4.jpg" alt="Jane Doe" />
+            <h4>Jane Doe</h4>
+            <p>Editor</p>
+            <div class="social-links">
+              <img
+                alt="Facebook"
+                fetchpriority="high"
+                src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png"
+                style="width: 25px; height: 25px; object-fit: cover"
+              />
+              <img
+                alt="Twitter"
+                fetchpriority="high"
+                src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png"
+                style="width: 25px; height: 25px; object-fit: cover"
+              />
+              <img
+                alt="Instagram"
+                fetchpriority="high"
+                src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png"
+                style="width: 25px; height: 25px; object-fit: cover"
+              />
+              <img
+                alt="YouTube"
+                fetchpriority="high"
+                src="https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png"
+                style="width: 25px; height: 25px; object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="join-team">
+        <h3>Join Our Team</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores hic
+          enim velit suscipit assumenda rem facere sit, perferendis impedit unde
+          debitis provident repudiandae quo commodi, minus quae culpa, fugit
+          tempora.
+        </p>
+        <br />
+        <a href="contact.html" class="contact-btn">Contact Us ></a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-columns">
+        <div class="column">
+          <h4>Regions</h4>
+          <ul>
+            <li><a href="#">U.S.</a></li>
+            <li><a href="#">Africa</a></li>
+            <li><a href="#">Americas</a></li>
+            <li><a href="#">Asia</a></li>
+            <li><a href="#">China</a></li>
+            <li><a href="#">Europe</a></li>
+            <li><a href="#">Middle</a></li>
+            <li><a href="#">East</a></li>
+            <li><a href="#">Opinion</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Fashion</h4>
+          <ul>
+            <li><a href="#">Election 2016</a></li>
+            <li><a href="#">Nation</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Politics</h4>
+          <ul>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Markets</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">Luxury</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Featured</h4>
+          <ul>
+            <li><a href="#">Football</a></li>
+            <li><a href="#">Golf</a></li>
+            <li><a href="#">Tennis</a></li>
+            <li><a href="#">Motorsport</a></li>
+            <li><a href="#">Horseracing</a></li>
+            <li><a href="#">Equestrian</a></li>
+            <li><a href="#">Equestrian</a></li>
+            <li><a href="#">Sailing</a></li>
+            <li><a href="#">Skiing</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>FAQ</h4>
+          <ul>
+            <li><a href="#">Aviation</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Traveller</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Food/Drink</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Partner Hotels</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>+More</h4>
+          <ul>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Arts</a></li>
+            <li><a href="#">Autos</a></li>
+            <li><a href="#">Luxury</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <hr />
+        <p>
+          &copy; 2024 All rights reserved | This template is made with
+          <span class="heart">❤</span> by Colorlib
+        </p>
+      </div>
+      <a href="#top" class="back-to-top">&#9650;</a>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          // Sélectionne les éléments à faire apparaître
+          const elementsToFade = document.querySelectorAll(".abouto, .history");
+
+          // Appliquer un délai pour échelonner l'effet de fondu
+          elementsToFade.forEach((element, index) => {
+              setTimeout(() => {
+                  element.classList.add("fade-in", "visible");
+              }, index * 100); // Échelonne l'effet par 100ms pour chaque élément
+          });
+      });
+    </script>
+    <script>
+      // Attendre que le DOM soit complètement chargé
+      document.addEventListener("DOMContentLoaded", function () {
+        // Ajouter la classe fade-in après un délai de 100ms
+        const joinTeamHeading = document.querySelector(".join-team h3");
+        setTimeout(() => {
+          joinTeamHeading.classList.add("fade-in");
+        }, 100);
+      });
+    </script>
+  </body>
+</html>
+
+<!-- IL FAUT ANIMER LENTEMENT VERS LE BAS AUSSI LES IMAGEEEEEEEEEEEEEEEEEEEEEEEEE -->
